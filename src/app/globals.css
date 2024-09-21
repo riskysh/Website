@@ -20,6 +20,10 @@ body {
   font-family: var(--font-geist-sans);
 }
 
+p {
+  font-family: var(--font-geist-mono);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
