@@ -24,7 +24,7 @@ export default function Home() {
             Apart from this i play with some technologies like <a className="underline underline-offset-4 decoration-[#808080] hover:decoration-[#fff] duration-700" href="https://rust-lang.org" target="_blank">Rust</a> and <a className="underline underline-offset-4 decoration-[#808080] hover:decoration-[#fff] duration-700" href="https://pocketbase.io" target="_blank">PocketBase</a>
           </p>
           <p className="text-white font-medium mt-8">
-          <a className="underline underline-offset-4 decoration-[#808080] hover:decoration-[#fff] duration-700" href="https://github.com/riskysh" target="_blank">Github</a>  <a className="underline underline-offset-4 decoration-[#808080] hover:decoration-[#fff] duration-700" href="/" target="_blank">Discord</a>  <a className="underline underline-offset-4 decoration-[#808080] hover:decoration-[#fff] duration-700" href="mailto:notriskysh@gmail.com" target="_blank">Email</a>
+          <a className="underline underline-offset-4 decoration-[#808080] hover:decoration-[#fff] duration-700" href="https://github.com/riskysh" target="_blank">Github</a>  <a className="underline underline-offset-4 decoration-[#808080] hover:decoration-[#fff] duration-700" href="https://discord.com/users/1260949968751956008" target="_blank">Discord</a>  <a className="underline underline-offset-4 decoration-[#808080] hover:decoration-[#fff] duration-700" href="mailto:notriskysh@gmail.com" target="_blank">Email</a>
           </p>
         </div>
       </div>
