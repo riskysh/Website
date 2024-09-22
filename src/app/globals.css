@@ -18,14 +18,19 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-geist-sans);
-}
-
-p {
-  font-family: var(--font-geist-mono);
+  color: white;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.font-geist-sans {
+  font-family: var(--font-geist-sans);
+}
+
+.font-geist-mono {
+  font-family: var(--font-geist-mono);
 }

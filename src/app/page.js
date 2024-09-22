@@ -1,33 +1,50 @@
-import Image from "next/image";
 import Link from "next/link";
-import Header from "../components/Header"
 
 export default function Home() {
   return (
-    <>
-      <div>
-      <Header />
-      </div>
-      <div className="w-full h-96 grid mx-auto">
-        <div className="p-4 mx-auto w-8/12 mt-16">
-          <h1 className="text-white text-5xl font-semibold flex relative h-2">Risky</h1>
-          <p className="text-white font-medium flex mt-16">
-            Hi i am so called Risky, a creative web developer</p>
-          <p className="text-white font-medium mt-4">Specialized in <a className="underline underline-offset-4 decoration-[#808080] hover:decoration-[#fff] duration-700" href="https://react.dev" target="_blank">React</a>, <a className="underline underline-offset-4 decoration-[#808080] hover:decoration-[#fff] duration-700" href="https://nextjs.org" target="_blank">NextJS </a>
-           and <a className="underline underline-offset-4 decoration-[#808080] hover:decoration-[#fff] duration-700" href="https://kit.svelte.dev" target="_blank">SvelteKit</a> with strong knowledge in Javascript
-          </p>
-          <p className="text-white font-medium">
-            I have also decent experience with <a className="underline underline-offset-4 decoration-[#808080] hover:decoration-[#fff] duration-700" href="https://python.org" target="_blank">Python</a> and strong knowledge in building UIs<br></br>
-            using <a className="underline underline-offset-4 decoration-[#808080] hover:decoration-[#fff] duration-700" href="https://ui.shadcn.com" target="_blank">ShadCN.</a>
-          </p>
-          <p className="text-white font-medium mt-4">
-            Apart from this i play with some technologies like <a className="underline underline-offset-4 decoration-[#808080] hover:decoration-[#fff] duration-700" href="https://rust-lang.org" target="_blank">Rust</a> and <a className="underline underline-offset-4 decoration-[#808080] hover:decoration-[#fff] duration-700" href="https://pocketbase.io" target="_blank">PocketBase</a>
-          </p>
-          <p className="text-white font-medium mt-8">
-          <a className="underline underline-offset-4 decoration-[#808080] hover:decoration-[#fff] duration-700" href="https://github.com/riskysh" target="_blank">Github</a>  <a className="underline underline-offset-4 decoration-[#808080] hover:decoration-[#fff] duration-700" href="https://discord.com/users/1260949968751956008" target="_blank">Discord</a>  <a className="underline underline-offset-4 decoration-[#808080] hover:decoration-[#fff] duration-700" href="mailto:notriskysh@gmail.com" target="_blank">Email</a>
+    <main className="flex flex-col items-center w-full mx-auto px-8">
+      <div className="w-full max-w-7xl mt-16">
+        <span className="text-5xl font-semibold">Risky</span>
+        <div className="flex flex-col gap-4 mt-12 font-geist-mono font-medium">
+          <p>Hi! I am Risky, a creative web developer.</p>
+          <div>
+            <p>
+              Specialized in <TextLink href="https://react.dev">React</TextLink>
+              , <TextLink href="https://nextjs.org">NextJS</TextLink> and{" "}
+              <TextLink href="https://kit.svelte.dev">SvelteKit</TextLink> with
+              strong knowledge in Javascript.
+            </p>
+            <p>
+              I am also decently experienced with{" "}
+              <TextLink href="https://python.org">Python</TextLink> and in
+              building UIs using{" "}
+              <TextLink href="https://ui.shadcn.com">ShadCN</TextLink>.
+            </p>
+          </div>
+          <p>
+            Apart from this I play with some technologies like{" "}
+            <TextLink href="https://rust-lang.org">Rust</TextLink> and{" "}
+            <TextLink href="https://pocketbase.io">PocketBase</TextLink>.
           </p>
         </div>
+        <div className="flex gap-3 mt-10 font-medium">
+          <TextLink href="https://github.com/riskysh">Github</TextLink>
+          <TextLink href="https://discord.com/users/1260949968751956008">
+            Discord
+          </TextLink>
+          <TextLink href="mailto:notriskysh@gmail.com">Email</TextLink>
+        </div>
       </div>
-    </>
+    </main>
   );
 }
+
+const TextLink = ({ href, children }) => (
+  <Link
+    href={href}
+    className="underline underline-offset-4 decoration-neutral-500 hover:decoration-white duration-700 font-geist-mono"
+    target="_blank"
+  >
+    {children}
+  </Link>
+);
