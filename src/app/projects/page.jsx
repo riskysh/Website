@@ -8,8 +8,8 @@ export default function Projects() {
        </div>
        <div className="w-full h-96 grid mx-auto">
           <div className="p-4 mx-auto w-8/12 mt-16">
-           <a href="https://github.com/riskysh/Math-Speedrun" target="_blank">
             <h1 className="text-white text-5xl font-semibold flex relative h-2">Projects</h1>
+            <a href="https://github.com/riskysh/Math-Speedrun" target="_blank">
             <div className="border border-[#1a1a1a] rounded-lg p-4 mt-20 hover:bg-[#1a1a1a] duration-200 cursor-pointer">
                 <h1 className="text-white text-3xl font-semibold">Math Speedrun</h1>
                 <p className="text-white font-medium mt-6">
