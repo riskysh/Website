@@ -1,5 +1,4 @@
 import ProjectBox from "@/components/project-box";
-import Link from "next/link"
 
 export default function Home() {
   return (
@@ -28,8 +27,10 @@ export default function Home() {
             Projects
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto text-white">
-            <Link href="https://github.com/riskysh/crazy-memes" target="_blank"><ProjectBox title={"Crazy Memes"} description={"A simple website where you can watch and share memes images"} /></Link>
-            <Link href="https://github.com/riskysh/math-speedrun" target="_blank"><ProjectBox title={"Math Speedrun"} description={"A game where you have to answer simple math questions and beat your highscore"} /></Link>
+            <ProjectBox link={"https://github.com/riskysh/crazy-memes"} title={"Crazy Memes"}
+            description={"A simple website where you can watch and share memes images"} />
+            <ProjectBox link={"https://github.com/riskysh/math-speedrun"} title={"Math Speedrun"} 
+            description={"A game where you have to answer simple math questions"} />
           </div>
         </div>
       </div>
