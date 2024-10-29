@@ -8,10 +8,10 @@ export default function Home() {
       <div className="max-w-2xl w-full shadow-lg rounded-lg overflow-hidden">
         <div className="p-8">
           <h1 className="text-3xl font-bold text-white mb-4">
-            Hi, i'm Risky
+            Hi, i am Risky
           </h1>
           <p className="text-white mb-6">
-            I'm a creative developer interested in web dev. I usually build projects using NextJS and SvelteKit and 
+            I am a creative developer interested in web dev. I usually build projects using NextJS and SvelteKit and 
             strong knowledge in Javascript.
 
           </p>
