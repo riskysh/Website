@@ -13,8 +13,8 @@ export default function Header() {
               <Link href="https://discord.com/users/1260949968751956008" target="_blank">
                   <h3 className="font-medium hover:underline underline-offset-4">Discord</h3>
               </Link>
-              <Link href="/blogs">
-                  <h3 className="font-medium hover:underline underline-offset-4">Blogs</h3>
+              <Link href="mailto:notriskysh@gmail.com" target="_blank">
+                  <h3 className="font-medium hover:underline underline-offset-4">Email</h3>
               </Link>
           </div>
       </header>
